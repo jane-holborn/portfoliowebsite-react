@@ -21,7 +21,7 @@ export const Resume = () => {
             <br />
             In 2024 I discovered my passion for software engineering after
             enrolling in a Certificate IV in IT (Programming). Having recently
-            completed my studies at TAFE, I am looking forward to begining my
+            completed my studies at TAFE, I am looking forward to beginning my
             studies at Murdoch University where I have been accepted into a
             Bachelor of Information Technology. I'll be completing my degree
             part-time, so I am really excited about having the opportunity to
