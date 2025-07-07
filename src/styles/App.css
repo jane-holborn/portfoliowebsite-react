@@ -419,7 +419,7 @@ ul.smallCardContainer {
 /* Mobile friendly set up for smaller phones like iPhone SE and Samsumg Galaxy S8+*/
 @media (max-width: 400px) {
   nav {
-    height: 78px;
+    height: 76px;
     padding-left: 68px;
     z-index: 101;
   }
@@ -448,6 +448,7 @@ ul.smallCardContainer {
   }
 
   section h1 {
+    font-size: 2.5rem;
     margin-top: 7rem;
   }
 
@@ -461,7 +462,7 @@ ul.smallCardContainer {
   }
 
   section h1.homePageIntroduction {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     letter-spacing: 1.5px;
     line-height: 1.2;
   }
@@ -551,6 +552,7 @@ ul.smallCardContainer {
   }
 
   section h1 {
+    font-size: 2.6rem;
     margin-top: 7rem;
   }
 
@@ -564,15 +566,12 @@ ul.smallCardContainer {
   }
 
   section h1.homePageIntroduction {
-    font-size: 2.6rem;
+    font-size: 3.3rem;
     letter-spacing: 1.5px;
     line-height: 1.2;
   }
 
   section p.homePageIntroduction {
-    margin: 0;
-    padding: 0;
-    text-align: center;
     font-size: 1.2rem;
   }
 
@@ -670,8 +669,18 @@ ul.smallCardContainer {
   }
 
   section h1.homePageIntroduction {
-    font-size: 4rem;
+    font-size: 3.9rem;
     letter-spacing: 1.5px;
+  }
+
+  /* Social media icons */
+  .socialMediaGrid {
+    gap: 1.3rem;
+  }
+
+  .socialMediaGrid svg {
+    width: 40px;
+    height: 40px;
   }
 
   .largeCardContainer li {
