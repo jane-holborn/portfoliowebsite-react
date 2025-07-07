@@ -114,11 +114,7 @@ export const Resume = () => {
               </h5>
             </div>
             <div>
-              <p>
-                Studying part-time while looking for a full-time role as a
-                software engineer to compliment my studies.
-                <br /> Double major: Computer Science and second major TBC.
-              </p>
+              <p>Double major: Computer Science and second major TBC.</p>
             </div>
             <hr />
             <div>

@@ -419,23 +419,23 @@ ul.smallCardContainer {
 /* Mobile friendly set up for smaller phones like iPhone SE and Samsumg Galaxy S8+*/
 @media (max-width: 400px) {
   nav {
-    height: 80px;
-    padding-left: 70px;
+    height: 78px;
+    padding-left: 68px;
     z-index: 101;
   }
 
   nav ul {
     gap: 20px;
-    padding-left: 10px;
+    padding-left: 8px;
     font-size: 1.3rem;
     z-index: 102;
   }
 
   .hamburgerIcon {
     top: 1.6rem;
-    left: 1.6rem;
-    width: 30px;
-    height: 24px;
+    left: 1.5rem;
+    width: 28px;
+    height: 22px;
     z-index: 103;
   }
 
@@ -461,16 +461,23 @@ ul.smallCardContainer {
   }
 
   section h1.homePageIntroduction {
-    font-size: 2.6rem;
+    font-size: 2.5rem;
     letter-spacing: 1.5px;
     line-height: 1.2;
   }
 
   section p.homePageIntroduction {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+  }
+
+  /* Social media icons */
+  .socialMediaGrid {
+    gap: 1rem;
+  }
+
+  .socialMediaGrid svg {
+    width: 34px;
+    height: 34px;
   }
 
   /* Portfolio Styling */
@@ -548,7 +555,7 @@ ul.smallCardContainer {
   }
 
   #home {
-    gap: 1.8rem;
+    gap: 1.9rem;
     padding-top: 4rem;
   }
 
@@ -567,6 +574,16 @@ ul.smallCardContainer {
     padding: 0;
     text-align: center;
     font-size: 1.2rem;
+  }
+
+  /* Social media icons */
+  .socialMediaGrid {
+    gap: 1.1rem;
+  }
+
+  .socialMediaGrid svg {
+    width: 38px;
+    height: 38px;
   }
 
   /* Portfolio Styling */

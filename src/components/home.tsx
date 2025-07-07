@@ -15,8 +15,8 @@ export const Home = () => {
       <p className="homePageIntroduction">
         I am Perth-based junior software engineer with a background in offshore
         oil and gas operations. I love coding and creating industrial 3D props,
-        and when I am not doing these you'll find me gaming or reading a good
-        book.
+        and when I am not doing these I like to go on road trips, game with
+        friends or read a good book.
       </p>
       <div className="socialMediaGrid">
         <a
