@@ -7,7 +7,7 @@ This is my personal portfolio website, designed with a mobile-first approach to 
 - **HTML:** for structure and layout
 - **CSS:** for styling, animations, and responsive design
 - **TypeScript:** for type safety and better development experience
-- **React:** for building reusable componetns and managing UI state
+- **React:** for building reusable components and managing UI state
 - **Vite:** for fast development and optimised builds
 
 ## Features
