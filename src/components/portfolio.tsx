@@ -8,7 +8,7 @@ export const Portfolio = () => {
       <div className="portfolioGrid">
         <div className="portfolioCardContainer">
           <a
-            href="https://github.com/jane-holborn/PortfolioWebsite"
+            href="https://github.com/jane-holborn/portfoliowebsite-react"
             target="_blank"
           >
             <div className="cardImage">
