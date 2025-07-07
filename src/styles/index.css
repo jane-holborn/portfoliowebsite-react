@@ -1,0 +1,37 @@
+:root {
+  --color-primary: #468ff6;
+  --color-secondary: #053a8f;
+  --color-accent: #ff9c33;
+  --color-dark: #032863;
+  --color-light: #71aefb;
+  --color-white: #fff;
+  --color-card-bg: rgba(36, 82, 150, 0.6);
+  --color-card-hover: rgba(3, 40, 99, 1);
+  --color-card-shadow: rgba(0, 0, 0, 0.3);
+  --color-card-shadow-hover: rgba(255, 156, 51, 0.8);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overscroll-behavior: none;
+}
+
+body {
+  font-size: 1.2rem;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(
+    to bottom,
+    var(--color-primary) 0%,
+    var(--color-secondary) 50%,
+    var(--color-dark) 100%
+  );
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-repeat: no-repeat;
+}

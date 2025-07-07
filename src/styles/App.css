@@ -1,0 +1,727 @@
+/* Navigation menu */
+nav {
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  display: flex;
+  height: 100px;
+  align-items: center;
+  padding-left: 120px;
+  border-bottom: 4px solid var(--color-light);
+  box-shadow: 0 4px 8px var(--color-card-shadow);
+  backdrop-filter: blur(30px);
+  z-index: 97;
+}
+
+nav ul {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 60px;
+  padding-left: 20px;
+  list-style-type: none;
+  font-size: 1.6rem;
+  z-index: 98;
+}
+
+nav ul.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+nav a:hover {
+  color: var(--color-accent);
+  transition: 0.4s;
+}
+
+.hamburgerIconBackground {
+  display: flex;
+}
+
+.hamburgerIcon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 2.1rem;
+  left: 3rem;
+  width: 36px;
+  height: 28px;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+  background: none;
+  border: none;
+  z-index: 99;
+}
+
+.bar {
+  width: 100%;
+  height: 4px;
+  background: var(--color-white);
+  border-radius: 2px;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  z-index: 100;
+}
+
+.hamburgerIcon.active .bar:nth-child(1) {
+  transform: rotate(45deg) translateY(18.3px);
+  background: var(--color-white);
+}
+
+.hamburgerIcon.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburgerIcon.active .bar:nth-child(3) {
+  transform: rotate(-45deg) translateY(-18.3px);
+  background: var(--color-white);
+}
+
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#home {
+  max-width: 80vw;
+}
+
+/* Link Styling */
+a {
+  color: var(--color-white);
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+
+hr {
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid var(--color-accent);
+}
+
+/* Section styling */
+section {
+  min-height: 100vh;
+  max-width: 87vw;
+  display: flex;
+  gap: 2.4rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  color: var(--color-white);
+  z-index: 1;
+}
+
+section h1 {
+  font-size: 3.2rem;
+  margin-top: 8rem;
+}
+
+section h2 {
+  padding: 0 14px;
+  font-size: 2rem;
+  text-decoration: underline;
+}
+
+section h3 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0 14px;
+  text-decoration: none;
+}
+
+section h4 {
+  font-size: 1.3rem;
+  font-weight: lighter;
+}
+
+section h5 {
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+section h6 {
+  font-size: 1.1rem;
+  font-weight: lighter;
+  text-align: center;
+  margin: 0;
+}
+
+section p {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+section h1.homePageIntroduction {
+  font-family: Coiny, Arial, sans-serif;
+  font-size: 4.4rem;
+  letter-spacing: 2px;
+  line-height: 1.3;
+  margin: 0;
+}
+
+section p.professionalSummaryStyling {
+  text-align: center;
+  padding: 0 14px;
+}
+
+section p.homePageIntroduction {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  color: var(--color-white);
+  padding: 30px 0;
+}
+
+/* Ocean container. */
+.oceanContainer {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: none;
+}
+
+/* Social media icons */
+.socialMediaGrid {
+  display: flex;
+  gap: 1.5rem;
+  margin: 10px;
+}
+
+.socialMediaGrid svg {
+  width: 42px;
+  height: 42px;
+}
+
+.socialMediaGrid svg:hover {
+  fill: var(--color-accent);
+  transition: 0.4s;
+}
+
+/* Portfolio styling */
+.portfolioGrid {
+  display: grid;
+  gap: 2rem 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 80vw;
+  margin: 0;
+}
+
+.portfolioCardContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  min-height: 300px;
+  border: 2px solid var(--color-white);
+  border-radius: 4px;
+  cursor: pointer;
+  background: var(--color-card-bg);
+  box-shadow: 0 4px 8px var(--color-card-shadow);
+  backdrop-filter: blur(2px);
+  object-fit: cover;
+}
+
+.cardImage {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  border-bottom: 2px solid var(--color-white);
+}
+
+.cardImage img {
+  width: 100%;
+  max-height: auto;
+  object-fit: cover;
+}
+
+.cardDescription {
+  width: 100%;
+  padding: 20px 14px;
+}
+
+.portfolioCardContainer:hover {
+  color: var(--color-white);
+  background: var(--color-card-hover);
+  border: 2px solid var(--color-white);
+  box-shadow: 4px 4px 10px 0 var(--color-card-shadow-hover);
+  transition: 0.2s;
+  transform: scale(1.01);
+  backdrop-filter: none;
+}
+
+.portfolioCardContainer a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Portfolio Website */
+.portfolioCardContainer:nth-child(1) {
+  grid-column: 1 / span 2;
+  grid-row-start: 1;
+}
+/* Library Management System */
+.portfolioCardContainer:nth-child(2) {
+  grid-column: 2 / span 2;
+  grid-row-start: 2;
+}
+
+/* Native Comments */
+.portfolioCardContainer:nth-child(3) {
+  grid-column-start: 3;
+  grid-row-start: 1;
+}
+
+/* Future project */
+.portfolioCardContainer:nth-child(4) {
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+
+/* Resume styling */
+.resumeGrid {
+  display: grid;
+  gap: 2rem 1.5rem;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 80vw;
+  margin: 0;
+}
+
+.resumeCardContainer {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 300px;
+  padding: 40px 0;
+  border: 2px solid var(--color-white);
+  border-radius: 4px;
+  backdrop-filter: blur(2px);
+  background: var(--color-card-bg);
+  box-shadow: 0 4px 8px var(--color-card-shadow);
+}
+
+.workExperienceCardContainer {
+  display: flex;
+  gap: 1.4rem;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 14px;
+}
+
+.educationCardContainer {
+  display: flex;
+  gap: 1.4rem;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 14px;
+}
+
+.technicalCardContainer {
+  display: flex;
+  gap: 1.4rem;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 14px;
+}
+
+/* Professional Summary */
+.resumeCardContainer:nth-child(1) {
+  grid-column: 1 / 5;
+  grid-row-start: 1;
+}
+
+/* Work Experience */
+.resumeCardContainer:nth-child(2) {
+  grid-column: 2 / 5;
+  grid-row: 2 / span 2;
+}
+
+/* Qualifications */
+.resumeCardContainer:nth-child(3) {
+  grid-column: 2 / 5;
+  grid-row-start: 4;
+}
+
+/* Technical Skills */
+.resumeCardContainer:nth-child(4) {
+  grid-column-start: 1;
+  grid-row: 2 / 5;
+}
+
+ul.smallCardContainer {
+  width: 80%;
+  margin: 14px auto;
+  padding: 0;
+  display: flex;
+  gap: 4px;
+  flex-direction: column;
+  text-align: left;
+}
+
+/* Styling for footer area at bottom of webpage */
+.coralBackground {
+  position: relative;
+  width: 100vw;
+  height: 160px;
+  overflow: hidden;
+}
+
+.coralBackground img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: 100%;
+}
+
+.coralBackground img.crab {
+  z-index: 10;
+  top: 30%;
+  left: 10%;
+  width: 100px;
+}
+
+.coralBackground img.seaweed {
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Mobile friendly set up for smaller phones like iPhone SE and Samsumg Galaxy S8+*/
+@media (max-width: 400px) {
+  nav {
+    height: 80px;
+    padding-left: 70px;
+    z-index: 101;
+  }
+
+  nav ul {
+    gap: 20px;
+    padding-left: 10px;
+    font-size: 1.3rem;
+    z-index: 102;
+  }
+
+  .hamburgerIcon {
+    top: 1.6rem;
+    left: 1.6rem;
+    width: 30px;
+    height: 24px;
+    z-index: 103;
+  }
+
+  .hamburgerIcon.active .bar:nth-child(1) {
+    transform: rotate(45deg) translateY(17px);
+  }
+
+  .hamburgerIcon.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translateY(-17px);
+  }
+
+  section h1 {
+    margin-top: 7rem;
+  }
+
+  #home {
+    gap: 1.8rem;
+    padding-top: 4rem;
+  }
+
+  #home p br {
+    display: none;
+  }
+
+  section h1.homePageIntroduction {
+    font-size: 2.6rem;
+    letter-spacing: 1.5px;
+    line-height: 1.2;
+  }
+
+  section p.homePageIntroduction {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  /* Portfolio Styling */
+  .portfolioGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    height: 30%;
+  }
+
+  /* Resume Styling */
+  .resumeGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    height: 30%;
+  }
+
+  .technicalCardContainer {
+    padding: 0;
+  }
+
+  .mobileGridTemplate {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 0 14px;
+  }
+
+  .mobileGridCardContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.2rem;
+  }
+
+  .mobileGridCardContainer ul.smallCardContainer {
+    margin: 0 auto;
+  }
+}
+
+/* Mobile friendly set up */
+@media (min-width: 401px) and (max-width: 746px) {
+  nav {
+    height: 80px;
+    padding-left: 70px;
+    z-index: 101;
+  }
+
+  nav ul {
+    gap: 30px;
+    padding-left: 16px;
+    font-size: 1.4rem;
+    z-index: 102;
+  }
+
+  .hamburgerIcon {
+    top: 1.5rem;
+    left: 1.6rem;
+    width: 32px;
+    height: 26px;
+    z-index: 103;
+  }
+
+  .hamburgerIcon.active .bar:nth-child(1) {
+    transform: rotate(45deg) translateY(17px);
+  }
+
+  .hamburgerIcon.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translateY(-17px);
+  }
+
+  section h1 {
+    margin-top: 7rem;
+  }
+
+  #home {
+    gap: 1.8rem;
+    padding-top: 4rem;
+  }
+
+  #home p br {
+    display: none;
+  }
+
+  section h1.homePageIntroduction {
+    font-size: 2.6rem;
+    letter-spacing: 1.5px;
+    line-height: 1.2;
+  }
+
+  section p.homePageIntroduction {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  /* Portfolio Styling */
+  .portfolioGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    height: 30%;
+  }
+
+  /* Resume Styling */
+  .resumeGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    height: 30%;
+  }
+
+  .technicalCardContainer {
+    padding: 0;
+  }
+
+  .mobileGridTemplate {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 0 14px;
+  }
+
+  .mobileGridCardContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.2rem;
+  }
+
+  .mobileGridCardContainer ul.smallCardContainer {
+    margin: 0 auto;
+  }
+}
+
+/* Tablet | iPad friendly set up */
+@media (min-width: 747px) and (max-width: 1200px) {
+  nav {
+    height: 92px;
+    padding-left: 90px;
+    z-index: 101;
+  }
+
+  nav ul {
+    gap: 40px;
+    padding-left: 18px;
+    font-size: 1.5rem;
+    z-index: 102;
+  }
+
+  .hamburgerIcon {
+    top: 1.9rem;
+    left: 2rem;
+    width: 34px;
+    height: 26px;
+    z-index: 103;
+  }
+
+  .hamburgerIcon.active .bar:nth-child(1) {
+    transform: rotate(45deg) translateY(17px);
+  }
+
+  .hamburgerIcon.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translateY(-17px);
+  }
+
+  section h1 {
+    margin-top: 7.6rem;
+  }
+
+  #home {
+    gap: 2rem;
+    padding-top: 4rem;
+  }
+
+  #home p br {
+    display: none;
+  }
+
+  section h1.homePageIntroduction {
+    font-size: 4rem;
+    letter-spacing: 1.5px;
+  }
+
+  .largeCardContainer li {
+    font-size: 1.2rem;
+    padding-left: 5px;
+  }
+
+  /* Portfolio styling */
+  .portfolioGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    height: 30%;
+  }
+
+  /* Resume Styling */
+  .resumeGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    height: 30%;
+  }
+
+  .technicalCardContainer {
+    padding: 0;
+  }
+
+  .mobileGridTemplate {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 30px;
+  }
+
+  .mobileGridTemplate hr {
+    display: none;
+  }
+
+  .mobileGridCardContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 14px;
+    gap: 1.5rem;
+    border: 2px solid var(--color-white);
+    border-radius: 4px;
+  }
+
+  .mobileGridCardContainer ul.smallCardContainer {
+    margin: 0 auto;
+  }
+}
+
+/* Wide screen styling for desktops larger than 27" */
+
+@media (min-width: 2560px) {
+  /* Resume styling */
+  .resumeGrid {
+    max-width: 58vw;
+  }
+
+  /* Portfolio styling */
+  .portfolioGrid {
+    max-width: 58vw;
+  }
+
+  #home {
+    max-width: 58vw;
+  }
+}
