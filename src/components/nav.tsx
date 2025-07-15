@@ -1,12 +1,12 @@
 import { useState } from "react";
 
 export const Navigation = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState<boolean>(false);
   const handleLinkClick = () => setMenuOpen(false);
   return (
     <nav>
       <button
-        className="hamburgerIcon"
+        className={`hamburgerIcon ${menuOpen ? "active" : ""}`}
         aria-label="Toggle navigation"
         onClick={() => setMenuOpen((open) => !open)}
       >
