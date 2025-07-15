@@ -30,7 +30,7 @@ export const Portfolio = () => {
         </div>
         <div className="portfolioCardContainer">
           <a
-            href="https://github.com/jane-holborn/LibrarySystem"
+            href="https://github.com/jane-holborn/librarysystem-fullstack"
             target="_blank"
           >
             <div className="cardImage">
@@ -39,15 +39,17 @@ export const Portfolio = () => {
             <div className="cardDescription">
               <h2>Library Management System</h2>
               <p className="portfolioDescription">
-                This desktop application is designed to manage the operations of
-                a library, allowing both librarians and users to interact with
-                the system. The focus of this application is multi-window
-                navigation, basic user verification, dynamic data interaction
-                within the application while it is running, and data
-                presentation using custom data templates. Future iterations will
-                include a backend for persistant data management.
+                Currently under construction, this is version 2 of my original
+                Library System. V2 is a full-stack application that follows the
+                MVVM design pattern. The core architecture has been scaffolded,
+                the API is connected, and data can be successfully retrieved
+                from the SQLite database to the frontend. I plan to continue
+                developing this project in my spare time.
               </p>
-              <div className="technology">Technology: WPF, C#, XAML, NUnit</div>
+              <div className="technology">
+                Technology: WPF, C#, XAML, NUnit, ASP.NET Web API, EF Core,
+                SQLite
+              </div>
             </div>
           </a>
         </div>
