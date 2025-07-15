@@ -24,7 +24,7 @@ nav ul {
   gap: 60px;
   padding-left: 20px;
   list-style-type: none;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   z-index: 98;
 }
 
@@ -48,7 +48,7 @@ nav a:hover {
   justify-content: space-between;
   position: absolute;
   top: 2.1rem;
-  left: 3rem;
+  left: 3.2rem;
   width: 36px;
   height: 28px;
   cursor: pointer;
@@ -68,7 +68,7 @@ nav a:hover {
 }
 
 .hamburgerIcon.active .bar:nth-child(1) {
-  transform: rotate(45deg) translateY(18.3px);
+  transform: rotate(45deg) translateY(17.1px);
   background: var(--color-white);
 }
 
@@ -77,7 +77,7 @@ nav a:hover {
 }
 
 .hamburgerIcon.active .bar:nth-child(3) {
-  transform: rotate(-45deg) translateY(-18.3px);
+  transform: rotate(-45deg) translateY(-17.1px);
   background: var(--color-white);
 }
 
@@ -127,7 +127,6 @@ section h1 {
 }
 
 section h2 {
-  padding: 0 14px;
   font-size: 2rem;
   text-decoration: underline;
 }
@@ -138,7 +137,6 @@ section h3 {
   text-align: center;
   font-size: 1.5rem;
   margin: 0;
-  padding: 0 14px;
   text-decoration: none;
 }
 
@@ -160,9 +158,15 @@ section h6 {
 }
 
 section p {
-  text-align: center;
+  text-align: justify;
   font-size: 1.2rem;
   margin: 0;
+}
+
+section ul {
+  text-align: justify;
+  line-height: 1.4;
+  padding: 0 50px 0 60px;
 }
 
 section h1.homePageIntroduction {
@@ -174,8 +178,7 @@ section h1.homePageIntroduction {
 }
 
 section p.professionalSummaryStyling {
-  text-align: center;
-  padding: 0 14px;
+  text-align: justify;
 }
 
 section p.homePageIntroduction {
@@ -262,8 +265,21 @@ footer {
 }
 
 .cardDescription {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   width: 100%;
-  padding: 20px 14px;
+  padding: 20px;
+}
+
+.portfolioDescription {
+  padding: 0;
+  text-align: justify;
+  hyphens: auto;
+}
+
+.technology {
+  text-align: center;
 }
 
 .portfolioCardContainer:hover {
@@ -307,9 +323,9 @@ footer {
 
 /* Resume styling */
 .resumeGrid {
-  display: grid;
-  gap: 2rem 1.5rem;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
   max-width: 80vw;
   margin: 0;
 }
@@ -320,7 +336,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   min-height: 300px;
-  padding: 40px 0;
+  padding: 40px 60px;
   border: 2px solid var(--color-white);
   border-radius: 4px;
   backdrop-filter: blur(2px);
@@ -333,7 +349,6 @@ footer {
   gap: 1.4rem;
   flex-direction: column;
   justify-content: center;
-  padding: 0 14px;
 }
 
 .educationCardContainer {
@@ -341,39 +356,60 @@ footer {
   gap: 1.4rem;
   flex-direction: column;
   justify-content: center;
-  padding: 0 14px;
 }
 
 .technicalCardContainer {
   display: flex;
   gap: 1.4rem;
-  flex-direction: column;
   justify-content: center;
-  padding: 0 14px;
 }
 
 /* Professional Summary */
 .resumeCardContainer:nth-child(1) {
-  grid-column: 1 / 5;
+  grid-column: 1 / span 5;
   grid-row-start: 1;
 }
 
 /* Work Experience */
 .resumeCardContainer:nth-child(2) {
-  grid-column: 2 / 5;
+  grid-column: 1 / span 5;
   grid-row: 2 / span 2;
 }
 
 /* Qualifications */
 .resumeCardContainer:nth-child(3) {
-  grid-column: 2 / 5;
+  grid-column: 1 / span 5;
   grid-row-start: 4;
 }
 
 /* Technical Skills */
 .resumeCardContainer:nth-child(4) {
-  grid-column-start: 1;
-  grid-row: 2 / 5;
+  grid-column: 1 / span 5;
+  grid-row: 5;
+}
+
+.mobileGridTemplate {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.mobileGridTemplate hr {
+  display: none;
+}
+
+.mobileGridCardContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  gap: 1.5rem;
+  border: 2px solid var(--color-accent);
+  border-radius: 4px;
+}
+
+.mobileGridCardContainer ul.smallCardContainer {
+  margin: 0 auto;
 }
 
 ul.smallCardContainer {
@@ -425,36 +461,36 @@ ul.smallCardContainer {
   }
 
   nav ul {
-    gap: 20px;
-    padding-left: 8px;
+    gap: 24px;
+    padding-left: 4px;
     font-size: 1.3rem;
     z-index: 102;
   }
 
   .hamburgerIcon {
-    top: 1.6rem;
-    left: 1.5rem;
+    top: 1.5rem;
+    left: 1.7rem;
     width: 28px;
     height: 22px;
     z-index: 103;
   }
 
   .hamburgerIcon.active .bar:nth-child(1) {
-    transform: rotate(45deg) translateY(17px);
+    transform: rotate(45deg) translateY(12.9px);
   }
 
   .hamburgerIcon.active .bar:nth-child(3) {
-    transform: rotate(-45deg) translateY(-17px);
+    transform: rotate(-45deg) translateY(-12.9px);
   }
 
   section h1 {
     font-size: 2.5rem;
-    margin-top: 7rem;
+    margin-top: 6.8rem;
   }
 
   #home {
     gap: 1.8rem;
-    padding-top: 4rem;
+    padding-top: 3.9rem;
   }
 
   #home p br {
@@ -468,7 +504,26 @@ ul.smallCardContainer {
   }
 
   section p.homePageIntroduction {
+    text-align: center;
+    hyphens: none;
     font-size: 1.2rem;
+  }
+
+  section p.professionalSummaryStyling {
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  section p {
+    hyphens: auto;
+    padding: 0;
+  }
+
+  section ul {
+    text-align: left;
+    hyphens: auto;
+    line-height: 1.2;
+    padding: 0 8px 0 18px;
   }
 
   /* Social media icons */
@@ -496,16 +551,13 @@ ul.smallCardContainer {
     gap: 1.5rem;
     height: 30%;
   }
-
-  .technicalCardContainer {
-    padding: 0;
+  .resumeCardContainer {
+    padding: 40px 20px;
   }
-
   .mobileGridTemplate {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    margin: 0 14px;
   }
 
   .mobileGridCardContainer {
@@ -537,18 +589,18 @@ ul.smallCardContainer {
 
   .hamburgerIcon {
     top: 1.5rem;
-    left: 1.6rem;
+    left: 2rem;
     width: 32px;
     height: 26px;
     z-index: 103;
   }
 
   .hamburgerIcon.active .bar:nth-child(1) {
-    transform: rotate(45deg) translateY(17px);
+    transform: rotate(45deg) translateY(15.7px);
   }
 
   .hamburgerIcon.active .bar:nth-child(3) {
-    transform: rotate(-45deg) translateY(-17px);
+    transform: rotate(-45deg) translateY(-15.7px);
   }
 
   section h1 {
@@ -571,8 +623,25 @@ ul.smallCardContainer {
     line-height: 1.2;
   }
 
+  section p {
+    text-align: justify;
+    hyphens: auto;
+    padding: 0;
+  }
+
+  section ul {
+    text-align: justify;
+    hyphens: auto;
+    line-height: 1.2;
+    padding: 0 20px 0 30px;
+  }
+
   section p.homePageIntroduction {
     font-size: 1.2rem;
+  }
+
+  section p.professionalSummaryStyling {
+    text-align: justify;
   }
 
   /* Social media icons */
@@ -601,15 +670,14 @@ ul.smallCardContainer {
     height: 30%;
   }
 
-  .technicalCardContainer {
-    padding: 0;
+  .resumeCardContainer {
+    padding: 40px 30px;
   }
 
   .mobileGridTemplate {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    margin: 0 14px;
   }
 
   .mobileGridCardContainer {
@@ -641,18 +709,18 @@ ul.smallCardContainer {
 
   .hamburgerIcon {
     top: 1.9rem;
-    left: 2rem;
+    left: 2.3rem;
     width: 34px;
     height: 26px;
     z-index: 103;
   }
 
   .hamburgerIcon.active .bar:nth-child(1) {
-    transform: rotate(45deg) translateY(17px);
+    transform: rotate(45deg) translateY(15.6px);
   }
 
   .hamburgerIcon.active .bar:nth-child(3) {
-    transform: rotate(-45deg) translateY(-17px);
+    transform: rotate(-45deg) translateY(-15.6px);
   }
 
   section h1 {
@@ -668,9 +736,22 @@ ul.smallCardContainer {
     display: none;
   }
 
+  section p {
+    padding: 0;
+  }
+
+  section ul {
+    line-height: 1.2;
+    padding: 0 30px 0 40px;
+  }
+
   section h1.homePageIntroduction {
     font-size: 3.9rem;
     letter-spacing: 1.5px;
+  }
+
+  section p.professionalSummaryStyling {
+    text-align: justify;
   }
 
   /* Social media icons */
@@ -704,15 +785,14 @@ ul.smallCardContainer {
     height: 30%;
   }
 
-  .technicalCardContainer {
-    padding: 0;
+  .resumeCardContainer {
+    padding: 40px 40px;
   }
 
   .mobileGridTemplate {
     display: grid;
     gap: 2rem;
     grid-template-columns: repeat(2, 1fr);
-    margin: 0 30px;
   }
 
   .mobileGridTemplate hr {
@@ -723,9 +803,9 @@ ul.smallCardContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 14px;
+    padding: 20px;
     gap: 1.5rem;
-    border: 2px solid var(--color-white);
+    border: 2px solid var(--color-accent);
     border-radius: 4px;
   }
 

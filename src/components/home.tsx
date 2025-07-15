@@ -13,10 +13,10 @@ export const Home = () => {
         Hello! <br /> My name is Jane.
       </h1>
       <p className="homePageIntroduction">
-        I am Perth-based junior software engineer with a background in offshore
-        oil and gas operations. I love coding and creating industrial 3D props,
-        and when I am not doing these I like to go on road trips, game with
-        friends or read a good book.
+        I am Perth-based software engineer with 10 years of experience in the
+        resource and energy sector. I love coding and creating industrial 3D
+        props, and when I am not doing these I like to go on road trips, game
+        with friends or read a good book.
       </p>
       <div className="socialMediaGrid">
         <a

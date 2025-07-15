@@ -19,13 +19,18 @@ export const Resume = () => {
             I could still support my Dad until his passing in 2022.
             <br />
             <br />
-            In 2024 I discovered my passion for software engineering after
-            enrolling in a Certificate IV in IT (Programming). Having recently
-            completed my studies at TAFE, I am looking forward to beginning my
-            studies at Murdoch University where I have been accepted into a
-            Bachelor of Information Technology. I'll be completing my degree
-            part-time, so I am really excited about having the opportunity to
-            find a great company to work with in a full-time capacity.
+            In 2024 I made the decision to specialise in software engineering
+            and enrolled in a Certificate IV in IT (Programming) at TAFE. Having
+            successfully finished the Certificate IV in IT, I am now completing
+            a Bachelor of Information Technology at Murdoch University. I'll be
+            completing my degree part-time, so I am really excited about having
+            the opportunity to find a great company to work with in a full-time
+            capacity.
+            <br />
+            <br />
+            My focus is .NET development including C#, ASP.NET Web API, EFCore,
+            SQLite and NUnit, as well as web development, specifically React and
+            TypeScript.
           </p>
         </div>
         <div className="resumeCardContainer">
@@ -43,6 +48,13 @@ export const Resume = () => {
               principles through a combination of practical projects and
               academic coursework.
             </p>
+            <ul>
+              <li>
+                <a href="#portfolio">Personal development portfolio</a>
+              </li>
+              <li>Certificate IV in IT (Programming)</li>
+              <li>Bachelor of Information Technology</li>
+            </ul>
             <hr />
             <div>
               <h3>Associate Systems Engineer</h3>
@@ -55,8 +67,15 @@ export const Resume = () => {
             <p>
               As a junior engineer on the SOE team, I was responsible for patch
               management for Windows and 3rd party patches on over 7000 devices
-              each month.
+              each month. Key acheivements include:
             </p>
+            <ul>
+              <li>
+                Improved patching processes, reducing deployment issues for over
+                7000 devices by implementing a user testing group that
+                represented the critical areas for business.
+              </li>
+            </ul>
             <hr />
             <div>
               <h3>Response Team Member</h3>
@@ -69,8 +88,24 @@ export const Resume = () => {
             <p>
               Delivered technical support in a service desk role,
               troubleshooting hardware, software and network issues for end
-              users.
+              users. Key acheivements include:
             </p>
+            <ul>
+              <li>
+                Optimised the onboarding and offboarding process by identifying
+                the key areas for callbacks, achieving an almost flawless
+                onboarding rate with no callbacks.
+              </li>
+              <li>
+                Identified recurring patterns in auto-generated tickets,
+                reducing unnecessary technician time spent on tickets and
+                clearing ticket backlogs.
+              </li>
+              <li>
+                Improved internal documentation, reducing training time for new
+                employees.
+              </li>
+            </ul>
             <hr />
             <div>
               <h3>Caregiving</h3>
@@ -81,8 +116,14 @@ export const Resume = () => {
               <em>Apr 2018 - Dec 2022</em>
             </h6>
             <p>
-              Supported my Dad in living his best life throughout his battle
-              against Dementia.
+              In 2018 I stepped away from my FIFO career offshore to be home
+              with my family and care full-time for my father during his battle
+              with dementia. Dad relocated to live with me, and I supported him
+              in living his best life throughout his illness which led to his
+              eventual transition into high-care assisted living facility.
+              Seeking a family-friendly career that allowed me to still support
+              my father, I transitioned into IT part-time at the end of 2021 and
+              continued to support him until his passing in late 2022.
             </p>
             <hr />
             <div>
@@ -94,10 +135,39 @@ export const Resume = () => {
               <em> Aug 2008 - Mar 2018</em>
             </h6>
             <p>
-              As an offshore production technician I was responsible for the
-              safe and efficient operation of process systems in high-pressure,
-              high-risk environments.
+              As an offshore production technician and Area Authority for my
+              designated plant, I was responsible for the safe and efficient
+              operation and maintenance of process systems in high-pressure,
+              high-risk environments. During each offshore rotation, I managed
+              the process plant, ensured the completion of the operations
+              maintenance schedule, performed the laboratory work, and played
+              key roles in both the emergency response and helicopter landing
+              teams. Key achievements include:
             </p>
+            <ul>
+              <li>
+                Awarded both the EAG High Achiever Trainee of the Year, and the
+                Challenger TAFE Trainee of the year awards.
+              </li>
+              <li>
+                Successfully led a small team of people during the commissioning
+                of the FPSO Okha, part of the A$1.8 billion North West Shelf Oil
+                Redevelopment Project, which was completed on schedule and
+                incident free.
+              </li>
+              <li>
+                Developed and executed a first-use, critical procedure for the
+                fire water and foam system on the FPSO Okha in collaboration
+                with engineering, ensuring compliance to design specifications,
+                environmental safety and concurrent activities
+              </li>
+              <li>
+                Optimising the training and competency process for the $50
+                billion Ichthys project, identifying areas for improvement in
+                scheduling and preparation, which resulted in a 300% increase in
+                competency completion.
+              </li>
+            </ul>
           </div>
         </div>
 
@@ -113,9 +183,7 @@ export const Resume = () => {
                 <em>Jul 2025 - Jul 2031</em>
               </h5>
             </div>
-            <div>
-              <p>Double major: Computer Science and second major TBC.</p>
-            </div>
+            <div>Double major: Computer Science and second major TBC.</div>
             <hr />
             <div>
               <h3>Certificate IV in IT (Programming)</h3>
@@ -127,48 +195,35 @@ export const Resume = () => {
               </h5>
             </div>
             <div>
-              <p>
-                Focus: Object-oriented languages skills, object-oriented design
-                and testing, artificial intelligence, emerging technologies, web
-                and application development, database management and development
-                methodoligies.
-              </p>
+              Focus: Object-oriented languages skills, object-oriented design
+              and testing, artificial intelligence, emerging technologies, web
+              and application development, database management and development
+              methodologies.
             </div>
           </div>
         </div>
 
         <div className="resumeCardContainer">
-          <h2>Technical Skills</h2>
+          <h2>Skills</h2>
           <div className="mobileGridTemplate technicalCardContainer">
             <div className="mobileGridCardContainer">
               <h3>Languages</h3>
               <ul className="smallCardContainer">
                 <li>C#</li>
-                <li>Java</li>
                 <li>CSS</li>
                 <li>HTML</li>
                 <li>TypeScript</li>
               </ul>
             </div>
-            <hr />
-            <div className="mobileGridCardContainer">
-              <h3>Software Development</h3>
-              <ul className="smallCardContainer">
-                <li>Version Control</li>
-                <li>Unit Testing</li>
-                <li>Agile Methodology</li>
-              </ul>
-            </div>
-            <hr />
             <div className="mobileGridCardContainer">
               <h3>Frameworks | Libraries</h3>
               <ul className="smallCardContainer">
-                <li>JUnit</li>
-                <li>NUnit</li>
                 <li>React</li>
+                <li title="NUnit Testing Framework">NUnit</li>
+                <li title="Entity Framework Core">EF Core</li>
+                <li>ASP.NET Web API</li>
               </ul>
             </div>
-            <hr />
             <div className="mobileGridCardContainer">
               <h3>Tools & IDEs</h3>
               <ul className="smallCardContainer">
@@ -177,40 +232,13 @@ export const Resume = () => {
                 <li>Visual Studio</li>
                 <li>Azure DevOps</li>
                 <li>Git | GitHub</li>
-                <li>NetBeans</li>
               </ul>
             </div>
-            <hr />
             <div className="mobileGridCardContainer">
               <h3>Databases</h3>
               <ul className="smallCardContainer">
+                <li>SQLite</li>
                 <li>Microsoft SQL Server 2022</li>
-              </ul>
-            </div>
-            <hr />
-            <div className="mobileGridCardContainer">
-              <h3>Soft Skills</h3>
-              <ul className="smallCardContainer">
-                <li>Problem-solving</li>
-                <li>Adaptability</li>
-                <li>Communication</li>
-                <li>Teamwork</li>
-                <li>Critical Thinking</li>
-              </ul>
-            </div>
-            <hr />
-            <div className="mobileGridCardContainer">
-              <h3>Cloud</h3>
-              <ul className="smallCardContainer">
-                <li>Microsoft 365</li>
-                <li>Familiar with AWS & Azure</li>
-              </ul>
-            </div>
-            <hr />
-            <div className="mobileGridCardContainer">
-              <h3>Operating Systems</h3>
-              <ul className="smallCardContainer">
-                <li>Windows</li>
               </ul>
             </div>
           </div>
