@@ -50,7 +50,9 @@ export const Resume = () => {
             </p>
             <ul>
               <li>
-                <a href="#portfolio">Personal development portfolio</a>
+                <a href="#portfolio" className="portfolioLink">
+                  Personal development portfolio
+                </a>
               </li>
               <li>Certificate IV in IT (Programming)</li>
               <li>Bachelor of Information Technology</li>
