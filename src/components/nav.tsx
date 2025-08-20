@@ -1,6 +1,11 @@
 import { useState } from "react";
+import { MoonIcon, SunIcon } from "./icons";
+type NavigationProps = {
+  toggleTheme: () => void;
+  theme: "light" | "dark";
+};
 
-export const Navigation = () => {
+export const Navigation = ({ toggleTheme, theme }: NavigationProps) => {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
   const handleLinkClick = () => setMenuOpen(false);
   return (
@@ -31,6 +36,13 @@ export const Navigation = () => {
           </a>
         </li>
       </ul>
+      <button
+        onClick={toggleTheme}
+        className="themeToggle themeIcon"
+        aria-label="Toggle theme"
+      >
+        {theme === "light" ? <MoonIcon /> : <SunIcon />}
+      </button>
     </nav>
   );
 };

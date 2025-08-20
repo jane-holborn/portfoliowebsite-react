@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./styles/App.css";
 import "./styles/bubble-animation.css";
 import { Navigation } from "./components/nav";
@@ -9,10 +10,19 @@ import { Copyright } from "./components/copyright";
 import { CoralDecoration } from "./components/coral-decoration";
 
 export const App = () => {
+  const [theme, setTheme] = useState<"light" | "dark">(() => {
+    return (localStorage.getItem("theme") as "light" | "dark") || "light";
+  });
+
+  const toggleTheme = () => {
+    const newTheme = theme === "light" ? "dark" : "light";
+    setTheme(newTheme);
+    localStorage.setItem("theme", newTheme);
+  };
   return (
-    <div className="appContainer">
+    <div className="appContainer" data-theme={theme}>
       <header>
-        <Navigation />
+        <Navigation toggleTheme={toggleTheme} theme={theme} />
       </header>
       <main>
         <Bubbles />

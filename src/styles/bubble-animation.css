@@ -5,7 +5,7 @@
 .bubble3 {
   position: absolute;
   bottom: 0;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: var(--color-bubble);
   border-radius: 50%;
   opacity: 0;
   z-index: 1;

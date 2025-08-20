@@ -1,14 +1,17 @@
 :root {
-  --color-primary: #468ff6;
+  --color-primary: #2178f4;
   --color-secondary: #053a8f;
   --color-accent: #ff9c33;
   --color-dark: #032863;
   --color-light: #71aefb;
-  --color-white: #fff;
+  --color-outline-text: #fff;
   --color-card-bg: rgba(36, 82, 150, 0.6);
   --color-card-hover: rgba(3, 40, 99, 1);
   --color-card-shadow: rgba(0, 0, 0, 0.3);
-  --color-card-shadow-hover: rgba(255, 156, 51, 0.8);
+  --color-card-shadow-hover: rgba(255, 156, 51, 0.5);
+  --color-bubble: rgba(255, 255, 255, 0.8);
+  --color-toggle-bg: var(--color-light);
+  --color-toggle-fg: white;
 }
 
 * {
@@ -34,4 +37,26 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
   background-repeat: no-repeat;
+}
+
+[data-theme="light"] {
+  --color-primary: #c8daff;
+  --color-secondary: #7aa6ff;
+  --color-accent: white;
+  --color-dark: #3f7fff;
+  --color-light: #dce7ff;
+  --color-outline-text: #313131;
+  --color-card-bg: rgba(220, 231, 255, 0.6);
+  --color-card-hover: rgba(220, 231, 255, 1);
+  --color-card-shadow: rgba(0, 0, 0, 0.1);
+  --color-card-shadow-hover: rgba(253, 243, 194, 0.5);
+  --color-bubble: rgba(255, 255, 255, 0.9);
+  --color-toggle-bg: var(--color-light);
+  --color-toggle-fg: #313131;
+  background: linear-gradient(
+    to bottom,
+    var(--color-primary) 0%,
+    var(--color-secondary) 50%,
+    var(--color-dark) 100%
+  );
 }

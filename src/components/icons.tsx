@@ -2,7 +2,7 @@ export const GitHubIcon = () => (
   <svg
     viewBox="0 0 101 101"
     xmlns="http://www.w3.org/2000/svg"
-    fill="var(--color-white)"
+    fill="var(--color-outline-text)"
   >
     <title>GitHub Profile</title>
     <path
@@ -17,7 +17,7 @@ export const LinkedInIcon = () => (
   <svg
     viewBox="0 0 448 512"
     xmlns="http://www.w3.org/2000/svg"
-    fill="var(--color-white)"
+    fill="var(--color-outline-text)"
   >
     <title>LinkedIn Profile</title>
     <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
@@ -26,7 +26,7 @@ export const LinkedInIcon = () => (
 
 export const CodeWarsIcon = () => (
   <svg
-    fill="var(--color-white)"
+    fill="var(--color-outline-text)"
     width="800px"
     height="800px"
     viewBox="0 0 24 24"
@@ -40,7 +40,7 @@ export const CodeWarsIcon = () => (
 
 export const LeetCodeIcon = () => (
   <svg
-    fill="var(--color-white)"
+    fill="var(--color-outline-text)"
     width="800px"
     height="800px"
     viewBox="0 0 24 24"
@@ -54,7 +54,7 @@ export const LeetCodeIcon = () => (
 
 export const ArtStationIcon = () => (
   <svg
-    fill="var(--color-white)"
+    fill="var(--color-outline-text)"
     width="800px"
     height="800px"
     viewBox="0 0 32 32"
@@ -62,5 +62,44 @@ export const ArtStationIcon = () => (
   >
     <title>ArtStation Profile</title>
     <path d="M0 23.63l2.703 4.672c0.552 1.094 1.667 1.781 2.885 1.781h17.943l-3.724-6.453zM32 23.661c0-0.641-0.193-1.245-0.516-1.75l-10.516-18.276c-0.557-1.057-1.656-1.719-2.854-1.719h-5.557l16.24 28.135 2.563-4.432c0.5-0.849 0.641-1.224 0.641-1.958zM17.161 19.047l-7.255-12.568-7.26 12.568z" />
+  </svg>
+);
+
+export const MoonIcon = () => (
+  <svg
+    width="800px"
+    height="800px"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M11.0174 2.80157C6.37072 3.29221 2.75 7.22328 2.75 12C2.75 17.1086 6.89137 21.25 12 21.25C16.7767 21.25 20.7078 17.6293 21.1984 12.9826C19.8717 14.6669 17.8126 15.75 15.5 15.75C11.4959 15.75 8.25 12.5041 8.25 8.5C8.25 6.18738 9.33315 4.1283 11.0174 2.80157ZM1.25 12C1.25 6.06294 6.06294 1.25 12 1.25C12.7166 1.25 13.0754 1.82126 13.1368 2.27627C13.196 2.71398 13.0342 3.27065 12.531 3.57467C10.8627 4.5828 9.75 6.41182 9.75 8.5C9.75 11.6756 12.3244 14.25 15.5 14.25C17.5882 14.25 19.4172 13.1373 20.4253 11.469C20.7293 10.9658 21.286 10.804 21.7237 10.8632C22.1787 10.9246 22.75 11.2834 22.75 12C22.75 17.9371 17.9371 22.75 12 22.75C6.06294 22.75 1.25 17.9371 1.25 12Z"
+      fill="currentColor"
+    />
+  </svg>
+);
+
+export const SunIcon = () => (
+  <svg
+    width="800px"
+    height="800px"
+    viewBox="0 0 16 16"
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+  >
+    <g fill="currentColor">
+      <path d="M8 .25a.75.75 0 01.75.75v1.273a.75.75 0 01-1.5 0V1A.75.75 0 018 .25z" />
+
+      <path
+        fillRule="evenodd"
+        d="M4 8a4 4 0 118 0 4 4 0 01-8 0zm4-2.5a2.5 2.5 0 100 5 2.5 2.5 0 000-5z"
+        clipRule="evenodd"
+      />
+
+      <path d="M8.75 13.727a.75.75 0 00-1.5 0V15a.75.75 0 001.5 0v-1.273zM2.519 2.518a.75.75 0 011.06 0l.904.904a.75.75 0 01-1.06 1.06l-.904-.903a.75.75 0 010-1.06zM12.578 11.517a.75.75 0 00-1.061 1.06l.904.904a.75.75 0 101.06-1.06l-.903-.904zM.25 8A.75.75 0 011 7.25h1.273a.75.75 0 010 1.5H1A.75.75 0 01.25 8zM13.727 7.25a.75.75 0 000 1.5H15a.75.75 0 000-1.5h-1.273zM4.483 11.517a.75.75 0 010 1.06l-.904.904a.75.75 0 01-1.06-1.06l.903-.904a.75.75 0 011.061 0zM13.481 3.58a.75.75 0 00-1.06-1.062l-.904.904a.75.75 0 101.06 1.06l.904-.903z" />
+    </g>
   </svg>
 );
