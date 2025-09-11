@@ -1,9 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./styles/App.css";
 import "./styles/bubble-animation.css";
 import { Navigation } from "./components/nav";
 import { Home } from "./components/home";
-import { Resume } from "./components/resume";
 import { Portfolio } from "./components/portfolio";
 import { Bubbles } from "./components/bubbles";
 import { Copyright } from "./components/copyright";
@@ -19,6 +18,17 @@ export const App = () => {
     setTheme(newTheme);
     localStorage.setItem("theme", newTheme);
   };
+
+  useEffect(() => {
+    const metaThemeColor = document.querySelector("meta[name='theme-color']");
+    if (metaThemeColor) {
+      metaThemeColor.setAttribute(
+        "content",
+        theme === "light" ? "#c8daff" : "#2178f4"
+      );
+    }
+  }, [theme]);
+
   return (
     <div className="appContainer" data-theme={theme}>
       <header>
@@ -27,7 +37,6 @@ export const App = () => {
       <main>
         <Bubbles />
         <Home />
-        <Resume />
         <Portfolio />
       </main>
       <footer>

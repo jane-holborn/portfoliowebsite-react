@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { MoonIcon, SunIcon } from "./icons";
+
 type NavigationProps = {
   toggleTheme: () => void;
   theme: "light" | "dark";
@@ -23,11 +24,6 @@ export const Navigation = ({ toggleTheme, theme }: NavigationProps) => {
         <li>
           <a href="#home" onClick={handleLinkClick}>
             Home
-          </a>
-        </li>
-        <li>
-          <a href="#resume" onClick={handleLinkClick}>
-            Resume
           </a>
         </li>
         <li>
